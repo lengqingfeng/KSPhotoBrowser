@@ -37,11 +37,8 @@
     for (int i = 0; i < 10; i++) {
         [_urls addObjectsFromArray:urls];
     }
-    if (_imageManagerType == KSImageManagerTypeSDWebImage) {
-        [KSPhotoBrowser setImageManagerClass:KSSDImageManager.class];
-    } else {
-        [KSPhotoBrowser setImageManagerClass:KSYYImageManager.class];
-    }
+    
+    [KSPhotoBrowser setImageManagerClass:KSSDImageManager.class];
 }
 
 - (void)didReceiveMemoryWarning {

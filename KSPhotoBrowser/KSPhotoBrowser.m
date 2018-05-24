@@ -68,7 +68,7 @@ static Class imageManagerClass = nil;
         _visibleItemViews = [[NSMutableArray alloc] init];
         
         if (imageManagerClass == nil) {
-            imageManagerClass = KSYYImageManager.class;
+            imageManagerClass = KSSDImageManager.class;
         }
         _imageManager = [[imageManagerClass alloc] init];
     }
